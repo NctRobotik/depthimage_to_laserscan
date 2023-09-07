@@ -4,5 +4,5 @@ depthimage_to_laserscan:
     range_min: 0.2
     range_max: 2.5
     scan_height: 1
-    output_frame: "camera1_link"
-    scan_topic: "camera1/scan"
+    output_frame: "camera2_link"
+    scan_topic: "camera2/scan"

@@ -1,0 +1,36 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/balci/ros2_ws/install/serial/include/**",
+        "/home/balci/ros2_ws/install/realsense2_camera/include/**",
+        "/home/balci/ros2_ws/install/realsense2_camera_msgs/include/**",
+        "/home/balci/ros2_ws/install/pointcloud_to_laserscan/include/**",
+        "/home/balci/ros2_ws/install/depthimage_to_laserscan/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/balci/ros2_ws/src/camera_pkgs/depthimage_to_laserscan/include/**",
+        "/home/balci/ros2_ws/src/depthimage_to_laserscan/include/**",
+        "/home/balci/ros2_ws/src/hub_motor/include/**",
+        "/home/balci/ros2_ws/src/pointcloud_to_laserscan/include/**",
+        "/home/balci/ros2_ws/src/rclcpp/rclcpp/include/**",
+        "/home/balci/ros2_ws/src/rclcpp/rclcpp_action/include/**",
+        "/home/balci/ros2_ws/src/rclcpp/rclcpp_components/include/**",
+        "/home/balci/ros2_ws/src/rclcpp/rclcpp_lifecycle/include/**",
+        "/home/balci/ros2_ws/src/realsense-ros/realsense2_camera/include/**",
+        "/home/balci/ros2_ws/src/ros2_wheeltec_n100_imu/include/**",
+        "/home/balci/ros2_ws/src/serial-ros2/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

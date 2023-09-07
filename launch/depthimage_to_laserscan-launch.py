@@ -24,12 +24,22 @@ from launch_ros.actions import Node
 def generate_launch_description():
     param_config = os.path.join(
         get_package_share_directory('depthimage_to_laserscan'), 'cfg', 'param.yaml')
+    param2_config = os.path.join(
+        get_package_share_directory('depthimage_to_laserscan'), 'cfg', 'param2.yaml')
     return LaunchDescription([
         Node(
             package='depthimage_to_laserscan',
             executable='depthimage_to_laserscan_node',
             name='depthimage_to_laserscan',
-            remappings=[('depth', '/camera/depth/image_rect_raw'),
-                        ('depth_camera_info', '/camera/depth/camera_info')],
-            parameters=[param_config])
+            remappings=[('depth', '/camera1/camera1/depth/image_rect_raw'),
+                        ('depth_camera_info', '/camera1/camera1/depth/camera_info')],
+            parameters=[param_config]),
+        
+        Node(
+            package='depthimage_to_laserscan',
+            executable='depthimage_to_laserscan_node',
+            name='depthimage_to_laserscan',
+            remappings=[('depth', '/camera2/camera2/depth/image_rect_raw'),
+                        ('depth_camera_info', '/camera2/camera2/depth/camera_info')],
+            parameters=[param2_config])
     ])
